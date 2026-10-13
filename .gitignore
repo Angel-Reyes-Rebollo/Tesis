@@ -1,0 +1,21 @@
+# Repositorios Git internos: se integrarán en el repositorio principal
+Back Impuestos/.git/
+Front Impuestos/.git/
+
+# Backend Java / Maven
+Back Impuestos/target/
+Back Impuestos/.idea/
+Back Impuestos/*.class
+
+# Frontend Angular / Node.js
+Front Impuestos/node_modules/
+Front Impuestos/.angular/
+Front Impuestos/dist/
+Front Impuestos/coverage/
+
+# Configuración local del editor
+Front Impuestos/.vscode/
+
+# Archivos del sistema
+Thumbs.db
+.DS_Store

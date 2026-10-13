@@ -1,0 +1,14 @@
+  
+  .form-group label {
+    font-weight: bold;
+  }
+  
+  .form-control {
+    border-radius: 5px;
+  }
+
+  .container {
+    max-height: 70vh; /* Ajusta la altura máxima del modal */
+    overflow-y: auto; /* Agrega el scroll vertical */
+  }
+  

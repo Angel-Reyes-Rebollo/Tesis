@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="row align-items-center">
+
+      <!-- Campos de ingreso asimilado e impuesto retenido -->
+      <div class="col-6 mb-3">
+        <label>Ingresos asimilados</label>
+        <input type="text" class="form-control" [(ngModel)]="ingreso.ingresoAnualas" [readonly]="ingreso.id_ingreso">
+      </div>
+      <div class="col-6 mb-3">
+        <label>Impuesto retenido</label>
+        <input type="text" class="form-control" [(ngModel)]="ingreso.retencionISRas" [readonly]="ingreso.id_ingreso">
+      </div>
+    </div>
+  </div>
+  

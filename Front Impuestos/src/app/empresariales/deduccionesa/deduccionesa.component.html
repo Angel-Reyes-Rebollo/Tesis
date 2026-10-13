@@ -1,0 +1,134 @@
+<div class="container">
+    <div class="deducciones-container p-3">
+      <h5>Deducciones personales</h5>
+      <p>Da clic en el botón "Actualizar" para colocar tus deducciones de IVA en su formulario correspondiente.</p>
+  
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        
+        <div>
+          <label for="montoPorDeduciranual" class="form-label">Monto total por deducir</label>
+          <input type="number" onkeypress="return event.charCode >= 48 && event.charCode <= 57 || event.charCode === 46" class="form-control" id="montoPorDeduciranual" value="310" />
+        </div>
+        <button class="btn btn-primary mt-4" (click)="actualizarMontoPorDeduciranual()">Actualizar</button>
+
+      </div>
+  
+      <div class="deducciones-grid">
+        <!-- Tarjetas con íconos -->
+        <div class="deduccion-card">
+          <div class="deduccion-icon">
+            <i class="fas fa-stethoscope"></i>
+          </div>
+          <div class="deduccion-text">
+            <h6>Honorarios médicos, dentales y gastos hospitalarios</h6>
+            <input type="number" class="form-control" id="gmedicosanual" value="1" />
+          </div>
+        </div>
+  
+        <div class="deduccion-card">
+          <div class="deduccion-icon">
+            <i class="fas fa-wheelchair"></i>
+          </div>
+          <div class="deduccion-text">
+            <h6>Gastos médicos por incapacidad o discapacidad</h6>
+            <input type="number" class="form-control" id="gincodisanual" value="0" />
+          </div>
+        </div>
+  
+        <div class="deduccion-card">
+          <div class="deduccion-icon">
+            <i class="fas fa-cross"></i>
+          </div>
+          <div class="deduccion-text">
+            <h6>Gastos funerales</h6>
+            <input type="number" class="form-control" id="funeralesanual" value="0" />
+          </div>
+        </div>
+  
+        <div class="deduccion-card">
+          <div class="deduccion-icon">
+            <i class="fas fa-hand-holding-heart"></i>
+          </div>
+          <div class="deduccion-text">
+            <h6>Donativos</h6>
+            <input type="number" class="form-control" id="donativosanual" value="10" />
+          </div>
+        </div>
+  
+        <div class="deduccion-card">
+          <div class="deduccion-icon">
+            <i class="fas fa-percentage"></i>
+          </div>
+          <div class="deduccion-text">
+            <h6>Intereses reales</h6>
+            <input type="number" class="form-control" id="irealesanual" value="0" />
+          </div>
+        </div>
+  
+        <div class="deduccion-card">
+          <div class="deduccion-icon">
+            <i class="fas fa-piggy-bank"></i>
+          </div>
+          <div class="deduccion-text">
+            <h6>Aportaciones voluntarias y planes personales de retiro</h6>
+            <input type="number" class="form-control" id="aportacionesanual" value="1" />
+          </div>
+        </div>
+  
+        <div class="deduccion-card">
+          <div class="deduccion-icon">
+            <i class="fas fa-file-medical"></i>
+          </div>
+          <div class="deduccion-text">
+            <h6>Primas por seguros de gastos médicos</h6>
+            <input type="number" class="form-control" id="primasgmedicosanual" value="1" />
+          </div>
+        </div>
+  
+        <div class="deduccion-card">
+          <div class="deduccion-icon">
+            <i class="fas fa-bus"></i>
+          </div>
+          <div class="deduccion-text">
+            <h6>Transportación escolar</h6>
+            <input type="number" class="form-control" id="tescolaranual" value="10" />
+          </div>
+        </div>
+  
+        <div class="deduccion-card">
+          <div class="deduccion-icon">
+            <i class="fas fa-university"></i>
+          </div>
+          <div class="deduccion-text">
+            <h6>Depósitos en cuentas especiales para el ahorro</h6>
+            <input type="number" class="form-control" id="dcespecialesanual" value="1" />
+          </div>
+        </div>
+  
+        <div class="deduccion-card">
+          <div class="deduccion-icon">
+            <i class="fas fa-school"></i>
+          </div>
+          <div class="deduccion-text">
+            <h6>Colegios</h6>
+            <input type="number" class="form-control" id="colegiosanual" value="16" />
+          </div>
+        </div>
+  
+        <div class="deduccion-card">
+          <div class="deduccion-icon">
+            <i class="fas fa-trash-alt"></i>
+          </div>
+          <div class="deduccion-text">
+            <h6>Deducciones personales eliminadas</h6>
+            <input type="number" class="form-control" id="dpeliminadasanual" value="0" />
+          </div>
+        </div>
+      </div>
+  
+      <p class="instructions mt-4">
+        Instrucciones: Aumente o disminuya el valor de las deducciones dependiendo el numero de facturas que tenga que entren dentro de cada especificación.
+      </p>
+    </div>
+  </div>
+  

@@ -1,0 +1,67 @@
+<div class="container my-4 p-4">
+    <h3 class="text-center">Proporciona los datos de la factura</h3>
+
+    <!-- Mensaje de exito-->
+    <div *ngIf="tippoAlert" class="alert alert-success" role="alert">
+      {{ mensaje }}
+    </div>
+    <!-- Mensaje de warning-->
+    <div *ngIf="!tippoAlert" class="alert alert-warning" role="alert">
+      {{ mensaje }}
+    </div>
+    <form>
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label for="tipoDeduccion" class="form-label">Tipo de Deducción</label>
+          <input id="tipoDeduccion" type="text" class="form-control" [value]="getTipoDeduccionTexto(tipoDeduccion)" readonly/>
+        </div>
+  
+        <div class="col-md-6 mb-3">
+          <label for="descripcion" class="form-label">Descripción</label>
+          <input id="descripcion" type="text" class="form-control" [(ngModel)]="descripcion" name="descripcion">
+        </div>
+      </div>
+  
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label for="rfcEmisor" class="form-label">RFC del emisor</label>
+          <input id="rfcEmisor" type="text" class="form-control" [(ngModel)]="rfcEmisor" name="rfcEmisor">
+        </div>
+  
+        <div class="col-md-6 mb-3">
+          <label for="importeTotal" class="form-label">Importe total</label>
+          <input id="importeTotal" type="number" class="form-control" [(ngModel)]="importeTotal" name="importeTotal">
+        </div>
+      </div>
+  
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label for="nombreRazonSocial" class="form-label">Nombre, denominación o razón social</label>
+          <input id="nombreRazonSocial" type="text" class="form-control" [(ngModel)]="nombreRazonSocial" name="nombreRazonSocial">
+        </div>
+  
+        <div class="col-md-6 mb-3">
+          <label for="montoDeducible" class="form-label">Monto deducible</label>
+          <input id="montoDeducible" type="number" class="form-control" [(ngModel)]="montoDeducible" name="montoDeducible">
+        </div>
+      </div>
+  
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label for="fechaEmision" class="form-label">Fecha de emisión</label>
+          <input id="fechaEmision" type="date" class="form-control" [(ngModel)]="fechaEmision" name="fechaEmision">
+        </div>
+  
+        <div class="col-md-6 mb-3">
+          <label for="cantidadRecuperada" class="form-label">Cantidad recuperada de los gastos efectuados</label>
+          <input id="cantidadRecuperada" type="number" class="form-control" [(ngModel)]="cantidadRecuperada" name="cantidadRecuperada">
+        </div>
+      </div>
+  
+      <div class="d-flex justify-content-end">
+        <button type="button" class="btn btn-secondary me-2" (click)="onCancel()">Cerrar</button>
+        <button type="submit" class="btn btn-primary" (click)="onSave()">Guardar</button>
+      </div>
+    </form>
+  </div>
+  

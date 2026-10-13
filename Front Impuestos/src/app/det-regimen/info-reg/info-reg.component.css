@@ -1,0 +1,187 @@
+
+/*
+
+.regimenes-fiscales-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.regimenes-fiscales-container-1 {
+  padding: 20px;
+}
+
+*/
+
+.header {
+  background-color: #3b5998;
+  padding: 10px;
+  color: white;
+  text-align: center;
+}
+
+.imagenes{
+  padding: 10px;
+}
+
+/*
+
+footer {
+  background-color: #3f51b5;
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.5rem;
+}
+
+*/
+
+.regimen-section {
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.menu {
+  background-color: #3f51b5;
+}
+
+h4 {
+  color: #3b5998;
+}
+
+h5{
+  color: #fff;
+}
+
+h1{
+  color: aqua;
+}
+
+.video-btn, .determine-regimen-btn {
+  background-color: #3b5998;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.video-btn:hover, .determine-regimen-btn:hover {
+  background-color: #2a4372;
+}
+
+.determine-regimen-btn-container {
+  text-align: right;
+  margin-top: 30px;
+  padding: 20px;
+}
+
+/* Modal styles */
+.modal {
+  display: block;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 20px;
+  width: 60%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Sección de cada régimen */
+.regimen-section {
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #e0f7fa; /* Color de fondo para cada sección */
+  border: 2px solid #81d4fa;
+  border-radius: 10px;
+}
+
+/* Encabezado de cada sección */
+.regimen-section h4 {
+  text-align: center;
+  background-color: #5168fa; /* Fondo para el encabezado */
+  padding: 10px;
+  border-radius: 5px;
+  color: #f7f5f5;
+}
+
+/* Sección de características, limitantes y requerimientos */
+.section-content {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.section-box {
+  width: 30%;
+  padding: 10px;
+  background-color: #b3e5fc; /* Fondo para cada recuadro */
+  border: 2px solid #4fc3f7;
+  border-radius: 10px;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.toolbar-title {
+  flex: 1;
+  text-align: center;
+  font-size: 40px;
+}
+
+.section-box:hover {
+  transform: scale(1.1); /* Aumentar ligeramente el tamaño */
+}
+
+.section-box h5 {
+  background-color: #5168fa;
+  border-radius: 5px;
+  padding: 5px;
+  text-align: center;
+}
+
+/* Estilos de los íconos */
+.section-icon {
+  /*font-size: 50px;*/
+  color: #212121;
+}
+
+/* Listas */
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.imagenes{
+  display: block;
+  margin: 0 auto;
+  width: 90px;
+  height: 90px;
+}
